@@ -17,4 +17,5 @@ public class SaloonDTO {
     private String city;
     private Long ownerId;
     private LocalTime openTime;
+    private LocalTime closeTime;
 }

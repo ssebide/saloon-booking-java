@@ -24,7 +24,7 @@ public class Saloon {
     private Long id;
 
     @Column(nullable = false)
-    private String Name;
+    private String name;
 
     @ElementCollection //creates a seperate table for this field
     private List<String> images;
@@ -46,4 +46,7 @@ public class Saloon {
 
     @Column(nullable = false)
     private LocalTime openTime;   
+
+    @Column(nullable = false)
+    private LocalTime closeTime;   
 }

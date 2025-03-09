@@ -10,11 +10,11 @@ public interface SaloonService {
 
     Saloon createSaloon(SaloonDTO saloon, UserDTO user);
 
-    Saloon updateSaloon(SaloonDTO saloon, UserDTO user, Long saloonId);
+    Saloon updateSaloon(SaloonDTO saloon, UserDTO user, Long saloonId) throws Exception;
 
     List<Saloon> getAllSaloons();
 
-    Saloon getSaloonById(Long saloonId);
+    Saloon getSaloonById(Long saloonId) throws Exception;
 
     Saloon getSaloonByOwnerId(Long ownerId);
 
